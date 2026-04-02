@@ -276,4 +276,4 @@ MIT
 
 ---
 
-> Want this running automatically for your channel without touching code? → [aarees.com](https://aarees.com)
+> Want this on autopilot — no setup, no terminal, just results? → [verticals.gg](https://verticals.gg)
