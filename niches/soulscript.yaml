@@ -7,7 +7,37 @@ script:
   pacing: "slow"
   word_count: "135 to 150"
   hooks:
-    - id: archetype_reveal
+    - id: parental_complex
+      template: "You didn't marry your partner. You married your unresolved childhood issues."
+      when: "discussing mother or father complexes and how they dictate partner selection"
+      
+    - id: individuation_goal
+      template: "The true purpose of your relationship isn't happiness. It is wholeness."
+      when: "shifting the focus from romantic idealism to the Jungian individuation process"
+      
+    - id: psychological_possession
+      template: "That overwhelming obsession you feel for them? It is not love. It is a psychological possession."
+      when: "differentiating between genuine connection and Anima/Animus projection"
+      
+    - id: relationship_alchemy
+      template: "The friction in your relationship isn't a sign to leave. It is the exact friction required to forge your soul."
+      when: "explaining the psychological alchemy of conflict and the transcendent function"
+      
+    - id: dream_message
+      template: "Still dreaming about your ex? Your unconscious is trying to deliver a message your waking mind refuses to hear."
+      when: "analyzing dreams and what they reveal about unintegrated relationship dynamics"
+      
+    - id: soulmate_trap
+      template: "The concept of a 'soulmate' is a dangerous psychological trap that is actively destroying your relationship."
+      when: "deconstructing romantic fantasies and the danger of projecting perfect wholeness onto another human"
+      
+    - id: golden_shadow
+      template: "You put them on a pedestal because they possess the brilliance you are too afraid to claim for yourself."
+      when: "discussing the 'golden shadow' and why we are drawn to traits we have repressed in ourselves"
+      
+    - id: unlived_life
+      template: "The heaviest burden a child must bear is the unlived life of the parent—and it is secretly running your love life."
+      when: "exploring generational trauma and inherited unconscious patterns in modern dating"- id: archetype_reveal
       template: "You think you chose your partner, but your unconscious did. Here is why."
       when: "explaining hidden relationship dynamics or the Anima/Animus"
     - id: shadow_work
@@ -39,7 +69,7 @@ visuals:
     - "Color grading and subtle lighting effects"
     - "Seamless transitions"
     - "Slow motion"
-  style: "A half-detailed graphite pencil sketch and traditional art illustration on clean white paper, featuring mostly monochrome linework with sparse, subtle color accents (about 10% coloring). This style uses visible, hand-drawn strokes with expressive, rough, and unblended hatched shading. The overall aesthetic is raw and evocative of traditional sketchbook art—primarily black and white, but punctuated by delicate, selective touches of color against a plain, void background."
+  style: "A simple yet artistic graphite pencil sketch and traditional art illustration on clean white paper, featuring mostly monochrome linework with sparse, subtle color accents (about 10% coloring). This style uses visible, hand-drawn strokes with expressive, rough, and unblended hatched shading. The overall aesthetic is raw and evocative of traditional sketchbook art—primarily black and white, but punctuated by delicate, selective touches of color against a plain, void background."
   # I moved your character rules into the suffix to force the AI to obey them!
   prompt_suffix: "9:16 ratio, graphite pencil sketch on white paper, 10 percent color accents, modern clothes, NO closeup faces, archetypal symbolism, highly detailed, raw sketchbook aesthetic"
   # character_ref: "assets/soulscript_avatar.jpg" 
@@ -69,3 +99,5 @@ thumbnail:
 discovery:
   reddit:
     subreddits: ["psychology", "relationships", "JungianTypology", "ShadowWork", "Jung"]
+
+
