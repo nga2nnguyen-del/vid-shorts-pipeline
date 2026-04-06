@@ -1,0 +1,55 @@
+name: skeleton
+display_name: "Mr. Skeleton"
+description: "Counterintuitive, bizarre, but scientifically accurate health and biology facts."
+script:
+  tone: "dry, slightly morbid, witty, highly educational, funny"
+  pacing: "fast"
+  word_count: "150 to 175"
+  hooks:
+    - id: myth_bust
+      template: "Your doctor told you {topic}, but Mr.Skeleton knows the truth."
+      when: "debunking a common health myth"
+    - id: body_glitch
+      template: "Here is a biological glitch happening inside your body right now."
+      when: "explaining a weird anatomical function"
+  cta_variants:
+    - "Stay healthy, trust Mr. Skeleton and I'll see you not so soon."
+    - "Follow Mr. Skeleton for more anatomy secrets."
+  forbidden_phrases:
+    - "like and subscribe"
+    - "smash that bell"
+    - "hey guys"
+    - "welcome back"
+  structure:
+    opening: "Bizarre hook in first 3 seconds."
+    middle: "2 counterintuitive biological facts."
+    closing: "Morbid but true takeaway and CTA."
+visuals:
+  style: "2D animation, cartoonish, character-driven"
+  prompt_suffix: "2D cartoon style, chubby skeletal character in a suit, educational illustration, smooth animation, warm lighting"
+voice:
+  suggested_voices:
+    edge_tts:
+      en: "en-US-GuyNeural"
+captions:
+  highlight_color: "#39FF14"  # This is Neon Green!
+  words_per_group: 3
+music:
+  mood: "dark, mysterious, electronic, scientific"
+  energy: "medium"
+  duck_volume_speech: 0.12
+  duck_volume_gap: 0.25
+captions:
+  highlight_color: "#FFFFFF"
+  words_per_group: 4
+music:
+  mood: "curious, classical, lighthearted"
+  energy: "low to medium"
+  duck_volume_speech: 0.15
+  duck_volume_gap: 0.30
+thumbnail:
+  style: "Expressive skeleton character, clear visual hook, high contrast"
+  max_words: 5
+discovery:
+  reddit:
+    subreddits: ["funfacts", "biology", "explainlikeimfive", "educationalgifs", "Damnthatsinteresting", "weirdfacts", "weirdbiology", "health", "weirdhealthfacts" ]
