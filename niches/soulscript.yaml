@@ -31,51 +31,39 @@ script:
     closing: "A profound, reflective takeaway and a calm CTA."
 
 visuals:
-  settings_pool:
-    - "A quiet, snowy, grey street"
-    - "Watching someone leave through heavy rain"
-    - "A sunrise or dawn from an interior view"
-    - "A steaming cup in a winter setting"
   context: "Modern environment, houses, streets, train stations"
   character_rules:
-    - "Only in human shadow or silhouette"
     - "No closeup faces"
     - "In modern clothes"
   scene_effects:
-    - "Color grading and cinematic lighting"
-    - "Slow motion aesthetics"
+    - "Color grading and subtle lighting effects"
     - "Seamless transitions"
-  style: "cinematic surrealism, rainy psychological noir, dreamlike, symbolic"
-  # Notice how the character rules are baked into the suffix below so the AI cannot ignore them
-  prompt_suffix: "modern environment, human silhouettes only, NO detailed faces, deep indigo and alchemical gold palette, archetypal symbolism, deep shadows, cinematic lighting, mirror reflections, 8k resolution, highly detailed"
+    - "Slow motion"
+  style: "A half-detailed graphite pencil sketch and traditional art illustration on clean white paper, featuring mostly monochrome linework with sparse, subtle color accents (about 10% coloring). This style uses visible, hand-drawn strokes with expressive, rough, and unblended hatched shading. The overall aesthetic is raw and evocative of traditional sketchbook art—primarily black and white, but punctuated by delicate, selective touches of color against a plain, void background."
+  # I moved your character rules into the suffix to force the AI to obey them!
+  prompt_suffix: "9:16 ratio, graphite pencil sketch on white paper, 10 percent color accents, modern clothes, NO closeup faces, archetypal symbolism, highly detailed, raw sketchbook aesthetic"
+  # character_ref: "assets/soulscript_avatar.jpg" 
 
 voice:
   suggested_voices:
     edge_tts:
-      en: "en-US-ChristopherNeural"
+      en: "en-US-AriaNeural" # Warm, sharing, empathetic female voice
 
 captions:
-  highlight_color: "#FFD700" # Alchemical Gold
-  words_per_group: 2 # Shorter word bursts for a calmer, slower reading pace
+  highlight_color: "#FFD700" # Alchemical Gold (will pop beautifully against the black/white sketches!)
+  words_per_group: 2 
 
 music:
   model_id: "lyria-3-pro-preview"
   output_format: "audio/wav"
-  prompt: >
-    [ENVIRONMENT]: Immersive atmospheric weather (heavy rain hitting a window, or distant winter wind), consistent binaural texture throughout.
-    [GENRE]: Cinematic Healing Ambient.
-    [INSTRUMENTS]: Minimalist felt piano, soft cello swells.
-    [STRUCTURE]: 
-    Intro: Only atmospheric weather sounds for 3 seconds.
-    Main: Slow, melancholic piano melody (70 BPM) layered over the atmosphere. 
-    Outro: Piano fades out, leaving only the sound of the weather.
+  prompt: "Cinematic Healing Ambient. Immersive atmospheric weather (heavy rain or winter wind) paired with minimalist felt piano and soft cello swells."
 
 audio_mixing:
-  duck_volume_speech: 0.08 # Rain/Music stays quiet while the narrator speaks
-  duck_volume_gap: 0.40 # Rain/Music swells up significantly during pauses to create ASMR atmosphere
+  duck_volume_speech: 0.08 
+  duck_volume_gap: 0.40 
 
 thumbnail:
-  style: "surreal aesthetic, golden ratio composition, minimal text"
+  style: "sketchbook aesthetic, 10% color accent, golden ratio composition, minimal text"
   max_words: 4
 
 discovery:
