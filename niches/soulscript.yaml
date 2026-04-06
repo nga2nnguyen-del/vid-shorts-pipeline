@@ -1,75 +1,74 @@
-name: soul_script
+name: soulscript
 display_name: "SoulScript"
-description: "Exploring the depths of the human psyche: love, sorrow, the shadows we hide, and the unspoken paths to healing."
+description: "Psychological deep-dives into human connection, the unconscious mind, and archetypal relationships with immersive ASMR-style environmental textures."
+
 script:
-  tone: "intimate, empathetic, reflective, gently probing"
-  pacing: "slow, deliberate, with pauses for reflection"
-  word_count: "120 to 150"
+  tone: "empathetic, introspective, deeply analytical, philosophical, slightly mysterious"
+  pacing: "slow"
+  word_count: "135 to 150"
   hooks:
-    - id: unspoken_truth
-      template: "There's a psychological reason you can't let go of {topic}, and it's not what you think."
-      when: "unprocessed grief or heartbreak"
-    - id: the_mirror
-      template: "Psychology says, the way you experience {topic} is actually a mirror of your inner self."
-      when: "explaining relationship dynamics or attraction"
-    - id: validation
-      template: "If you're feeling {emotion} right now, I need you to hear this."
-      when: "healing and emotional support"
+    - id: archetype_reveal
+      template: "You think you chose your partner, but your unconscious did. Here is why."
+      when: "explaining hidden relationship dynamics or the Anima/Animus"
+    - id: shadow_work
+      template: "The trait that annoys you most in your partner is actually a hidden part of yourself."
+      when: "discussing shadow projection in relationships"
+    - id: quote_drop
+      template: "Carl Jung warned us that until you make the unconscious conscious, it will direct your life and you will call it fate."
+      when: "introducing a deep psychological theory"
   cta_variants:
-    - "Save this for when your heart feels heavy."
-    - "Who came to mind? Send this to them."
-    - "Share your story in the comments. This is a safe space."
+    - "Make the unconscious conscious. Follow SoulScript."
+    - "Explore your shadow with us. Subscribe."
   forbidden_phrases:
     - "like and subscribe"
-    - "just get over it"
-    - "time heals all wounds"
-    - "good vibes only"
+    - "smash that bell"
+    - "hey guys"
+    - "crazy facts"
+    - "number one reason"
   structure:
-    opening: "Emotional hook or a startling psychological truth in the first 3 seconds."
-    middle: "Validation of the pain, a deeper psychological breakdown of the 'why', and a shift toward understanding."
-    closing: "A comforting reassurance and an empathetic CTA."
+    opening: "Introspective, thought-provoking hook in the first 3 seconds."
+    middle: "Explain the psychological theory (e.g., projection, archetypes) using a real-world relationship example."
+    closing: "A profound, reflective takeaway and a calm CTA."
+
 visuals:
-  dimension: "9:16" # Strictly optimized for vertical, full-screen mobile viewing to create an intimate, 1-on-1 feeling.
-  style: "moody, ethereal, soft focus, intimate, symbolic"
-  prompt_suffix: "soft cinematic lighting, muted tones, evocative, melancholic but warm, high quality, photorealistic"
-  scene_references:
-    - "Wong Kar-wai aesthetics: tight, claustrophobic framing with neon reflections on wet glass (e.g., 'In the Mood for Love')."
-    - "Macro shots: ink slowly blooming in water, a single tear catching the light, hands gently letting go of a wilted flower."
-    - "Solitary atmospheric settings: looking out of a train window at a blurred landscape, an empty room lit only by golden hour sunlight."
-  effects:
-    - "Raindrops sliding down a glass pane to mimic tears and melancholia."
-    - "Subtle camera vibrations or handheld sway to make the scene feel human and grounded, not overly polished."
-    - "Slow-motion dust motes floating in a sunbeam."
-    - "Soft light leaks and gentle film grain to add a nostalgic, memory-like texture."
+  settings_pool:
+    - "A quiet, snowy, grey street"
+    - "Watching someone leave through heavy rain"
+    - "A peaceful sunrise or dawn from an interior view"
+    - "A steaming cup on a table in a cold winter setting"
+  style: "cinematic surrealism, psychological noir, dreamlike, symbolic"
+  prompt_suffix: "moody atmospheric environment, deep indigo and alchemical gold palette, archetypal symbolism, deep shadows, cinematic lighting, mirror reflections, 8k resolution, highly detailed"
+  # character_ref: "assets/soulscript_avatar.jpg" 
+
 voice:
   suggested_voices:
     edge_tts:
-      en: "en-US-AriaNeural"
+      en: "en-US-ChristopherNeural"
+
 captions:
-  highlight_color: "#E8D8C8" 
-  words_per_group: 3 
+  highlight_color: "#FFD700" # Alchemical Gold
+  words_per_group: 2 # Shorter word bursts for a calmer, slower reading pace
+
 music:
-  mood: "melancholy, cinematic piano, atmospheric, healing ambient"
-  energy: "low, emotive, swelling"
-  duck_volume_speech: 0.10
-  duck_volume_gap: 0.30 
-  background_sounds:
-    - "Muffled, distant rain on a roof or street."
-    - "The subtle ticking of a clock (used sparingly for themes of passing time)."
-    - "Gentle, rhythmic ocean waves (for healing and grounding themes)."
-    - "The soft crackle of a warm fireplace or a vinyl record player."
-  references:
-    - title: "Cornfield Chase - Hans Zimmer (Slowed + Reverb for existential/deep psychological thoughts)"
-      url: "https://www.youtube.com/watch?v=1wqjzXq1-1I"
-    - title: "Ludovico Einaudi - Experience (For emotional breakthroughs and healing realizations)"
-      url: "https://www.youtube.com/watch?v=hN_q-_nGv4U"
-    - title: "Jacob and the Stone - Emile Mosseri (For raw, delicate sorrow and processing grief)"
-      url: "https://www.youtube.com/watch?v=T_8N_u3Eebw"
-    - title: "Ambient Rain & Soft Piano (General background layer for comforting videos)"
-      url: "https://www.youtube.com/watch?v=q76bMs-NwRk"
+  model_id: "lyria-3-pro-preview"
+  output_format: "audio/wav"
+  prompt: >
+    [ENVIRONMENT]: Immersive atmospheric weather (rain hitting a window or quiet winter wind), consistent binaural texture throughout.
+    [GENRE]: Cinematic Healing Ambient.
+    [INSTRUMENTS]: Minimalist felt piano, soft cello swells.
+    [STRUCTURE]: 
+    Intro: Only atmospheric weather sounds for 3 seconds.
+    Main: Slow, melancholic piano melody (70 BPM) layered over the atmosphere. 
+    Outro: Piano fades out, leaving only the sound of the weather.
+
+audio_mixing:
+  duck_volume_speech: 0.08 # Rain/Music stays quiet while the narrator speaks
+  duck_volume_gap: 0.40 # Rain/Music swells up significantly during pauses to create ASMR atmosphere
+
 thumbnail:
-  style: "evocative imagery, minimalistic text, moody atmosphere, heavy use of shadow and soft light"
+  style: "surreal aesthetic, golden ratio composition, minimal text"
   max_words: 4
+
 discovery:
   reddit:
-    subreddits: ["psychology", "breakups", "DecidingToBeBetter", "Jung", "HealSlut"]
+    subreddits: ["psychology", "relationships", "JungianTypology", "ShadowWork", "Jung"]
