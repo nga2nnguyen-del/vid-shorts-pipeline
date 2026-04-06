@@ -1,0 +1,75 @@
+name: soul_script
+display_name: "SoulScript"
+description: "Exploring the depths of the human psyche: love, sorrow, the shadows we hide, and the unspoken paths to healing."
+script:
+  tone: "intimate, empathetic, reflective, gently probing"
+  pacing: "slow, deliberate, with pauses for reflection"
+  word_count: "120 to 150"
+  hooks:
+    - id: unspoken_truth
+      template: "There's a psychological reason you can't let go of {topic}, and it's not what you think."
+      when: "unprocessed grief or heartbreak"
+    - id: the_mirror
+      template: "Psychology says, the way you experience {topic} is actually a mirror of your inner self."
+      when: "explaining relationship dynamics or attraction"
+    - id: validation
+      template: "If you're feeling {emotion} right now, I need you to hear this."
+      when: "healing and emotional support"
+  cta_variants:
+    - "Save this for when your heart feels heavy."
+    - "Who came to mind? Send this to them."
+    - "Share your story in the comments. This is a safe space."
+  forbidden_phrases:
+    - "like and subscribe"
+    - "just get over it"
+    - "time heals all wounds"
+    - "good vibes only"
+  structure:
+    opening: "Emotional hook or a startling psychological truth in the first 3 seconds."
+    middle: "Validation of the pain, a deeper psychological breakdown of the 'why', and a shift toward understanding."
+    closing: "A comforting reassurance and an empathetic CTA."
+visuals:
+  dimension: "9:16" # Strictly optimized for vertical, full-screen mobile viewing to create an intimate, 1-on-1 feeling.
+  style: "moody, ethereal, soft focus, intimate, symbolic"
+  prompt_suffix: "soft cinematic lighting, muted tones, evocative, melancholic but warm, high quality, photorealistic"
+  scene_references:
+    - "Wong Kar-wai aesthetics: tight, claustrophobic framing with neon reflections on wet glass (e.g., 'In the Mood for Love')."
+    - "Macro shots: ink slowly blooming in water, a single tear catching the light, hands gently letting go of a wilted flower."
+    - "Solitary atmospheric settings: looking out of a train window at a blurred landscape, an empty room lit only by golden hour sunlight."
+  effects:
+    - "Raindrops sliding down a glass pane to mimic tears and melancholia."
+    - "Subtle camera vibrations or handheld sway to make the scene feel human and grounded, not overly polished."
+    - "Slow-motion dust motes floating in a sunbeam."
+    - "Soft light leaks and gentle film grain to add a nostalgic, memory-like texture."
+voice:
+  suggested_voices:
+    edge_tts:
+      en: "en-US-AriaNeural"
+captions:
+  highlight_color: "#E8D8C8" 
+  words_per_group: 3 
+music:
+  mood: "melancholy, cinematic piano, atmospheric, healing ambient"
+  energy: "low, emotive, swelling"
+  duck_volume_speech: 0.10
+  duck_volume_gap: 0.30 
+  background_sounds:
+    - "Muffled, distant rain on a roof or street."
+    - "The subtle ticking of a clock (used sparingly for themes of passing time)."
+    - "Gentle, rhythmic ocean waves (for healing and grounding themes)."
+    - "The soft crackle of a warm fireplace or a vinyl record player."
+  references:
+    - title: "Cornfield Chase - Hans Zimmer (Slowed + Reverb for existential/deep psychological thoughts)"
+      url: "https://www.youtube.com/watch?v=1wqjzXq1-1I"
+    - title: "Ludovico Einaudi - Experience (For emotional breakthroughs and healing realizations)"
+      url: "https://www.youtube.com/watch?v=hN_q-_nGv4U"
+    - title: "Jacob and the Stone - Emile Mosseri (For raw, delicate sorrow and processing grief)"
+      url: "https://www.youtube.com/watch?v=T_8N_u3Eebw"
+    - title: "Ambient Rain & Soft Piano (General background layer for comforting videos)"
+      url: "https://www.youtube.com/watch?v=q76bMs-NwRk"
+thumbnail:
+  style: "evocative imagery, minimalistic text, moody atmosphere, heavy use of shadow and soft light"
+  max_words: 4
+discovery:
+  reddit:
+    subreddits: ["psychology", "breakups", "DecidingToBeBetter", "Jung", "HealSlut"]
