@@ -34,11 +34,20 @@ visuals:
   settings_pool:
     - "A quiet, snowy, grey street"
     - "Watching someone leave through heavy rain"
-    - "A peaceful sunrise or dawn from an interior view"
-    - "A steaming cup on a table in a cold winter setting"
-  style: "cinematic surrealism, psychological noir, dreamlike, symbolic"
-  prompt_suffix: "moody atmospheric environment, deep indigo and alchemical gold palette, archetypal symbolism, deep shadows, cinematic lighting, mirror reflections, 8k resolution, highly detailed"
-  # character_ref: "assets/soulscript_avatar.jpg" 
+    - "A sunrise or dawn from an interior view"
+    - "A steaming cup in a winter setting"
+  context: "Modern environment, houses, streets, train stations"
+  character_rules:
+    - "Only in human shadow or silhouette"
+    - "No closeup faces"
+    - "In modern clothes"
+  scene_effects:
+    - "Color grading and cinematic lighting"
+    - "Slow motion aesthetics"
+    - "Seamless transitions"
+  style: "cinematic surrealism, rainy psychological noir, dreamlike, symbolic"
+  # Notice how the character rules are baked into the suffix below so the AI cannot ignore them
+  prompt_suffix: "modern environment, human silhouettes only, NO detailed faces, deep indigo and alchemical gold palette, archetypal symbolism, deep shadows, cinematic lighting, mirror reflections, 8k resolution, highly detailed"
 
 voice:
   suggested_voices:
@@ -53,7 +62,7 @@ music:
   model_id: "lyria-3-pro-preview"
   output_format: "audio/wav"
   prompt: >
-    [ENVIRONMENT]: Immersive atmospheric weather (rain hitting a window or quiet winter wind), consistent binaural texture throughout.
+    [ENVIRONMENT]: Immersive atmospheric weather (heavy rain hitting a window, or distant winter wind), consistent binaural texture throughout.
     [GENRE]: Cinematic Healing Ambient.
     [INSTRUMENTS]: Minimalist felt piano, soft cello swells.
     [STRUCTURE]: 
