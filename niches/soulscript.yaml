@@ -71,8 +71,8 @@ voice:
   provider: "elevenlabs"
   suggested_voices:
     elevenlabs:
-      en: "21m00Tcm4TlvDq8ikWAM" # Voice ID for "Rachel" (Warm, Empathetic Female)
-
+      en: "21m00Tcm4TlvDq8ikWAM" # Rachel
+      
 captions:
   highlight_color: "#FFD700" 
   words_per_group: 2 
